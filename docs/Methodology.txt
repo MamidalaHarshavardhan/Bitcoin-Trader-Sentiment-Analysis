@@ -1,0 +1,33 @@
+Methodology
+
+1. Data Collection:
+Two datasets were used:
+- Bitcoin Market Sentiment (Fear/Greed Index)
+- Historical Trader Data
+
+2. Data Cleaning:
+- Removed unnecessary columns
+- Handled missing and invalid values
+- Standardized date formats using locale settings
+
+3. Data Transformation:
+- Converted timestamps into date format
+- Created Trade Date for merging
+- Standardized sentiment categories into Fear and Greed
+
+4. Data Merging:
+- Merged datasets using Trade Date and Date columns
+- Used Left Outer Join to retain all trader records
+
+5. Feature Engineering:
+- Created PnL Category (Profit/Loss)
+- Created Win Flag for win rate calculation
+
+6. Analysis:
+- Compared trader performance across sentiment categories
+- Evaluated trade behavior (Buy vs Sell)
+- Analyzed trends over time
+
+7. Visualization:
+- Built dashboard using Power BI
+- Included KPI cards and charts for insights
